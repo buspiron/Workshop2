@@ -32,4 +32,10 @@ public class User {
         return this.password;
     }
 
+    @Override
+    public String toString(){
+        return String.format("User data: userId = %d, userName = %s, email = %s, password = %s",
+                this.getId(), this.getUserName(), this.getEmail(), this.getPassword());
+    }
+
 }
